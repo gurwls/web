@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ebs</title>
+		<style>
+			span#text{
+			color:purple;}
+			
+		</style>
+	</head>
+	<body>
+			<h2 style="text-align:center;">정보입력 및 본인확인</h2>
+		<form action="result3.jsp" method="post">
+			<table border="1" width="1000px" height="800px" style="margin: 0 auto;" style="text-align:center;" >
+			<tr>
+				<td width="300" style="text-align:center;">아이디</td>
+				<td width="700"><label for="id"></label> <input type="text" name="id" id="id" size ="50"><input type="button" value="중복확인"></td>
+				
+			</tr>
+			<tr>
+				<td width="300" style="text-align:center;">비밀번호</td>
+				<td width="700"><label for = "pw"></label> <input type = "password" name = "pw" id="pw" size = "50" maxlength = "10"></td>
+				
+			</tr>
+			<tr>			
+				<td width="300" style="text-align:center;">비밀번호 확인</td>
+				<td width="700"><label for = "pw_re"></label> <input type = "password" name = "pw_re" id="pw_re" size = "50" maxlength = "10"></td>
+				
+			</tr>
+			<tr>
+				<td width="300" style="text-align:center;">이름</td>
+				<td><label for="_name"></label> <input type="text" name="_name" id="_name" size = "50"></td>
+			</tr>
+			<tr>
+				<td width="300" style="text-align:center;">성별</td>
+				<td><input type="radio" name="gender" value="Male">남성<input type="radio" name="gender" value="Female">여성
+				<input type="checkbox" name="check" value="check" checked="checked"> 선택정보(성별)수집 및 동의</td>
+			</tr>
+			<tr>
+				<td width="300" style="text-align:center;">생년월일</td>
+				<td><select name="year" id="year" class="year">
+					<option>1994</option>
+					<option>1995</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+					</select>년
+					<select name="month" id="month" class="month">
+					<option>1월</option>
+					<option>2월</option>
+					<option>3월</option>
+					<option>4월</option>
+					<option>5월</option>
+					<option>6월</option>
+					<option>7월</option>
+					<option>8월</option>
+					<option>9월</option>
+					<option>10월</option>
+					<option>11월</option>
+					<option>12월</option>
+					</select>월
+					<select name="day" id="day" class="day">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>			
+					<option>31</option>			
+					</select>일
+					</td>
+			</tr>
+			<tr>
+				<td width="300" style="text-align:center;">이메일</td>
+				<td><label for="email"></label> <input type="text" name="email" id="email">@<input type="text" name="email">
+					<br><span id="text">아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</span></td>
+			</tr>
+			<tr>
+				<td width="300" style="text-align:center;">휴대폰</td>
+				<td><label for="tel"></label><input type = "tel" name = "tel" class = "tel" id="tel">
+				<input type="checkbox" name="check" value="check" checked="checked"> 선택정보(휴대폰)수집 및 동의
+				<br><span id="text">아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</span></td>
+			</tr>
+			<tr>
+				<td width="300" style="text-align:center;">인증방법</td>
+				<td><input type="radio" name="tel" value="tel" checked="checked">휴대폰<input type="radio" name="email" value="email">이메일
+				<input type="button" value="인증"><br><span id="text">휴대폰 인증을 위한 인증번호 발송은 1일 최대 3회까지 가능합니다.</span></td>
+			</tr>
+			<tr>
+				<td width="300" style="text-align:center;">인증번호</td>
+				<td width="700"><label for="cknum"></label> <input type="text" name="cknum" id="cknum" size ="50"><input type="button" value="확인"></td>
+			</tr>
+			
+		</table>
+
+		<pre>																      <input type = "submit" value = "확인"></pre>
+		</form>
+	
+	</body>
+</html>
+
+
+
+
+
+
+
